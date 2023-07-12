@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(179, 5, 5);
+}
+.text {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(236, 135, 4);
+}
+
+.text .highlight {
+  color: rgb(251, 252, 248);
+}
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+.about-me-text {
+  color: rgb(224, 203, 203);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-me-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* jejj */
+.about-me2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-left: 70%;
+}
