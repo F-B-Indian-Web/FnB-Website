@@ -4,7 +4,7 @@ const menu = [
         title: "mutton biryani",
         category: "main course",
         price: 55.000,
-        img: "./images/item-1.jpeg",
+        img: "./images/menu2.jpg",
         desc: `Layers of beautifully spiced mutton and tender grains of rice topped with coriander and fried onions. `,
     },
     {
@@ -12,7 +12,7 @@ const menu = [
         title: "butter chicken",
         category: "main course",
         price: 40.000,
-        img: "./images/item-2.jpeg",
+        img: "./images/test.jpg",
         desc: `Tender chicken cooked in a rich tomato and butter-based sauce. `,
     },
     {
@@ -20,7 +20,7 @@ const menu = [
         title: "babi guling",
         category: "main course",
         price: 35.000,
-        img: "./images/item-3.jpeg",
+        img: "./images/menu2.jpg",
         desc: `Roasted suckling pig marinated in Balinese spices and served with rice and vegetables.`,
     },
     {
@@ -28,7 +28,7 @@ const menu = [
         title: "ayam betutu",
         category: "breakfast",
         price: 30.000,
-        img: "./images/item-4.jpeg",
+        img: "./images/menu2.jpg",
         desc: `Balinese style roasted chicken, marinated in rich herbs and spices. `,
     },
     {
@@ -36,7 +36,7 @@ const menu = [
         title: "rogan josh",
         category: "main course",
         price: 55.000,
-        img: "./images/item-6.jpeg",
+        img: "./images/menu2.jpg",
         desc: `A flavorful lamb curry made with aromatic spices and yogurt.`,
     },
     {
@@ -44,7 +44,7 @@ const menu = [
         title: "palak paneer",
         category: "vegetarian",
         price: 35.000,
-        img: "./images/item-6.jpeg",
+        img: "./images/menu2.jpg",
         desc: `Soft cottage cheese cubes cooked in a creamy spinach gravy.`,
     },
     {
@@ -84,7 +84,7 @@ const menu = [
         title: "mango lassi",
         category: "beverages",
         price: 30.000,
-        img: "./images/item-9.jpeg",
+        img: "./images/bev2.jpg",
         desc: `A refreshing yogurt-based drink blended with fresh mango pulp.`,
     },
     {
@@ -92,7 +92,7 @@ const menu = [
         title: "masala chai",
         category: "beverages",
         price: 25.000,
-        img: "./images/item-9.jpeg",
+        img: "./images/bev1.jpg",
         desc: `Traditional Indian spiced tea brewed with milk, tea leaves, and aromatic spices.`,
     },
     {
@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", function () {
             <div class="item-info">
               <header>
                 <h4>${item.title}</h4>
-                <h4 class="price">$${item.price}</h4>
+                <h4 class="price">Rp${item.price}.000</h4>
               </header>
               <p class="item-text">
                 ${item.desc}
@@ -145,3 +145,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     sectionCenter.innerHTML = displayMenu;
 });
+
+function displayMenuItems(menuItems){
+    
+}
