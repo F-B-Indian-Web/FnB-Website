@@ -11,11 +11,10 @@ body {
   background: #F2E5C7;
   line-height: 1.5;
 }
-img:not(.logo) {
-  width: 100%;
-}
+
 img {
   display: block;
+  width: 100%;
 }
 h1,
 h2,

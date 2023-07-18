@@ -26,9 +26,9 @@ const menu = [
     {
         id: 4,
         title: "ayam betutu",
-        category: "breakfast",
+        category: "main course",
         price: 30.000,
-        img: "./images/menu2.jpg",
+        img: "./images/menu6.jpeg",
         desc: `Balinese style roasted chicken, marinated in rich herbs and spices. `,
     },
     {
@@ -36,7 +36,7 @@ const menu = [
         title: "rogan josh",
         category: "main course",
         price: 55.000,
-        img: "./images/menu2.jpg",
+        img: "./images/menu7.jpeg",
         desc: `A flavorful lamb curry made with aromatic spices and yogurt.`,
     },
     {
@@ -44,7 +44,7 @@ const menu = [
         title: "palak paneer",
         category: "vegetarian",
         price: 35.000,
-        img: "./images/menu2.jpg",
+        img: "./images/menu8.jpeg",
         desc: `Soft cottage cheese cubes cooked in a creamy spinach gravy.`,
     },
     {
@@ -52,14 +52,14 @@ const menu = [
         title: "dal makhani",
         category: "vegetarian",
         price: 33.000,
-        img: "./images/item-7.jpeg",
+        img: "./images/menu9.jpeg",
         desc: `A rich and creamy lentil preparation made with black lentils, butter, and cream. `,
     },
     {
         id: 8,
         title: "gado-gado",
         category: "vegetarian",
-        price: 25.000,
+        price: 25,
         img: "./images/item-8.jpeg",
         desc: `A mix of boiled vegetables, tofu, and tempeh, served with peanut sauce.  `,
     },
@@ -67,7 +67,7 @@ const menu = [
         id: 9,
         title: "lawar",
         category: "vegetarian",
-        price: 20.000,
+        price: 20,
         img: "./images/item-9.jpeg",
         desc: `A traditional Balinese salad made with mixed vegetables, grated coconut, and minced meat substitute.`,
     },
@@ -75,7 +75,7 @@ const menu = [
         id: 10,
         title: "baingan bharta",
         category: "vegetarian",
-        price: 25.000,
+        price: 25,
         img: "./images/item-9.jpeg",
         desc: `Smoky roasted eggplant mashed and cooked with onions, tomatoes, and spices.`,
     },
@@ -83,7 +83,7 @@ const menu = [
         id: 11,
         title: "mango lassi",
         category: "beverages",
-        price: 30.000,
+        price: 30,
         img: "./images/bev2.jpg",
         desc: `A refreshing yogurt-based drink blended with fresh mango pulp.`,
     },
@@ -91,7 +91,7 @@ const menu = [
         id: 12,
         title: "masala chai",
         category: "beverages",
-        price: 25.000,
+        price: 25,
         img: "./images/bev1.jpg",
         desc: `Traditional Indian spiced tea brewed with milk, tea leaves, and aromatic spices.`,
     },
@@ -99,7 +99,7 @@ const menu = [
         id: 13,
         title: "es campur",
         category: "beverages",
-        price: 30.000,
+        price: 30,
         img: "./images/item-9.jpeg",
         desc: `A mixed fruit cocktail with shaved ice, sweet syrups, and condensed milk.`,
     },
@@ -107,15 +107,15 @@ const menu = [
         id: 14,
         title: "nimbu pani",
         category: "beverages",
-        price: 20.000,
+        price: 20,
         img: "./images/item-9.jpeg",
         desc: `A refreshing lemonade made with freshly squeezed lemon juice, water, and sugar.`,
     },
     {
         id: 15,
-        title: "es daleman",
-        category: "vegetarian",
-        price: 20.000,
+        title: "es daluman",
+        category: "beverages",
+        price: 20,
         img: "./images/item-9.jpeg",
         desc: `A refreshing and cooling drink made from the extract of daluman leaves with palm sugar`,
     },
@@ -123,8 +123,39 @@ const menu = [
 
 const sectionCenter = document.querySelector(".section-center");
 
+const filterBtns = document.querySelectorAll('.filter-btn')
+
+
+
 window.addEventListener("DOMContentLoaded", function () {
-    let displayMenu = menu.map(function (item) {
+    displayMenuItems(menu);
+});
+
+filterBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+        const category = e.currentTarget.dataset.id;
+        const menuCategory = menu.filter(function (menuItem) {
+            // console.log(menuItem.category);
+            if (menuItem.category === category) {
+                return menuItem;
+            }
+
+        });
+        //console.log(menuCategory);
+        if (category === 'all') {
+            displayMenuItems(menu)
+        }
+        else {
+            displayMenuItems(menuCategory)
+        }
+    });
+});
+
+
+
+
+function displayMenuItems(menuItems) {
+    let displayMenu = menuItems.map(function (item) {
         // console.log(item);
 
         return `<article class="menu-item">
@@ -144,8 +175,4 @@ window.addEventListener("DOMContentLoaded", function () {
     console.log(displayMenu);
 
     sectionCenter.innerHTML = displayMenu;
-});
-
-function displayMenuItems(menuItems){
-    
 }
