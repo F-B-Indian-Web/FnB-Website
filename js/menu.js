@@ -1,63 +1,71 @@
 const menu = [
     {
         id: 1,
-        title: "mutton biryani",
+        title: "Mutton Biryani",
+        label: "main course",
         category: "main course",
-        price: 55.000,
+        price: 55,
         img: "./images/menu2.jpg",
         desc: `Layers of beautifully spiced mutton and tender grains of rice topped with coriander and fried onions. `,
     },
     {
         id: 2,
-        title: "butter chicken",
+        title: "Butter Chicken",
+        label: "main course",
         category: "main course",
-        price: 40.000,
+        price: 40,
         img: "./images/test.jpg",
         desc: `Tender chicken cooked in a rich tomato and butter-based sauce. `,
     },
     {
         id: 3,
-        title: "babi guling",
+        title: "Babi Guling",
+        label: "main course",
         category: "main course",
-        price: 35.000,
+        price: 35,
         img: "./images/menu2.jpg",
         desc: `Roasted suckling pig marinated in Balinese spices and served with rice and vegetables.`,
     },
     {
         id: 4,
-        title: "ayam betutu",
+        title: "Ayam Betutu",
+        label: "main course",
         category: "main course",
-        price: 30.000,
+        price: 30,
         img: "./images/menu6.jpeg",
         desc: `Balinese style roasted chicken, marinated in rich herbs and spices. `,
     },
     {
         id: 5,
-        title: "rogan josh",
+        title: "Rogan Josh",
+        label: "main course",
         category: "main course",
-        price: 55.000,
+        price: 55,
         img: "./images/menu7.jpeg",
         desc: `A flavorful lamb curry made with aromatic spices and yogurt.`,
     },
     {
         id: 6,
-        title: "palak paneer",
+        title: "Palak Paneer",
+        label: "vegetarian",
         category: "vegetarian",
-        price: 35.000,
+        price: 35,
         img: "./images/menu8.jpeg",
         desc: `Soft cottage cheese cubes cooked in a creamy spinach gravy.`,
     },
     {
         id: 7,
-        title: "dal makhani",
+        title: "Dal Makhani",
+        label: "vegetarian",
         category: "vegetarian",
-        price: 33.000,
+        price: 33,
         img: "./images/menu9.jpeg",
         desc: `A rich and creamy lentil preparation made with black lentils, butter, and cream. `,
     },
     {
         id: 8,
-        title: "gado-gado",
+        title: "Gado-gado",
+        label: "vegetarian",
         category: "vegetarian",
         price: 25,
         img: "./images/item-8.jpeg",
@@ -65,7 +73,8 @@ const menu = [
     },
     {
         id: 9,
-        title: "lawar",
+        title: "Lawar",
+        label: "vegetarian",
         category: "vegetarian",
         price: 20,
         img: "./images/item-9.jpeg",
@@ -73,7 +82,8 @@ const menu = [
     },
     {
         id: 10,
-        title: "baingan bharta",
+        title: "Baingan Bharta",
+        label: "vegetarian",
         category: "vegetarian",
         price: 25,
         img: "./images/item-9.jpeg",
@@ -81,7 +91,8 @@ const menu = [
     },
     {
         id: 11,
-        title: "mango lassi",
+        title: "Mango Lassi",
+        label: "beverage",
         category: "beverages",
         price: 30,
         img: "./images/bev2.jpg",
@@ -89,7 +100,8 @@ const menu = [
     },
     {
         id: 12,
-        title: "masala chai",
+        title: "Masala Chai",
+        label: "beverage",
         category: "beverages",
         price: 25,
         img: "./images/bev1.jpg",
@@ -97,7 +109,8 @@ const menu = [
     },
     {
         id: 13,
-        title: "es campur",
+        title: "Es Campur",
+        label: "beverage",
         category: "beverages",
         price: 30,
         img: "./images/item-9.jpeg",
@@ -105,7 +118,8 @@ const menu = [
     },
     {
         id: 14,
-        title: "nimbu pani",
+        title: "Nimbu Pani",
+        label: "beverage",
         category: "beverages",
         price: 20,
         img: "./images/item-9.jpeg",
@@ -113,7 +127,8 @@ const menu = [
     },
     {
         id: 15,
-        title: "es daluman",
+        title: "Es Daluman",
+        label:"beverage",
         category: "beverages",
         price: 20,
         img: "./images/item-9.jpeg",
@@ -163,9 +178,11 @@ function displayMenuItems(menuItems) {
             <div class="item-info">
               <header>
                 <h4>${item.title}</h4>
-                <h4 class="price">Rp${item.price}.000</h4>
+                <h4 class="price">Rp${item.price}.000 </h4>
+                
               </header>
               <p class="item-text">
+              <h4>${item.label}</h4>
                 ${item.desc}
               </p>
             </div>
