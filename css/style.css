@@ -1,20 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: #F2E5C7;
 }
-h3{
-    text-align: center;
-    justify-content: center;
-}
-.container {
-    justify-content: center;
-    text-align: center;
-    display: flex;
 
+h3 {
+    text-align: center;
+    justify-content: center;
 }
-form{
-    width: 50%;
+
+.container{
+    width: 100%;
+}
+
+.space {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
