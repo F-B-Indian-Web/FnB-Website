@@ -9,3 +9,12 @@ h3{
     text-align: center;
     justify-content: center;
 }
+.container {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+form{
+    width: 50%;
+}
