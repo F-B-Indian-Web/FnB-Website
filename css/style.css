@@ -49,3 +49,13 @@ h3 {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
+span{
+    font-weight: 700;
+    color: #420101;
+}
+.msg{
+    justify-content: end;
+    align-items: end;
+    text-align: end;
+    margin-top: 15px;
+}
