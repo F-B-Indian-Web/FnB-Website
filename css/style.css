@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Serif", serif;
+}
+
+body {
+  background-color: #420101;
+  color: white;
+  overflow-x: hidden;
+  min-height: 3000px;
+  font-size: 20px;
+}
+
+/* Awal CSS Navbar */
+
+.navbar .navbar-brand img {
+  width: 16%;
+  height: 16%;
+}
+
+.navbar .modal fade .modal-dialog .modal-content .modal-header h5 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+/* Akhir CSS Navbar */
+
+/* Awal CSS Slide Show */
+
+/*  
+.container-show {
+  padding: 100px 0 0 0;
+}
+
+.conten-slide {
+  position: relative;
+  margin: auto;
+}
+
+.imgSlide-fade {
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100vh;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  color: rgba(255, 254, 224);
+  font-weight: bolder;
+  font-size: 18px;
+  transition: 0.6s ease;
+  -webkit-transition: 0.6s ease;
+  -moz-transition: 0.6s ease;
+  -ms-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  -ms-border-radius: 3px 0 0 3px;
+  -o-border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0);
+}
+
+.text {
+  color: #afafaf;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.content-slide .numberslide {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+*/
+/* Akhri CSS Slide Show */
+
+/* Responsive Awal */
+@media screen and (max-width: 800px) {
+}
+/* Responsive Akhir */
