@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Reservation</title>
+</head>
+
+<body>
+  <section class="reservation">
+    <div class="title">
+      <h3>Reservation</h3>
+    </div>
+
+    <div class="container">
+      <form name="submit-to-google-sheet">
+        <div class="form-row justify-content-md-center">
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" name="Name" placeholder="Your name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <input type="email" class="form-control" name="Email" placeholder="email@example.com" required>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="tel" class="form-control" name="Phone" placeholder="Phone number" required>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+          <div class="form-group col-md-4">
+            <input type="datetime-local" class="form-control" name="DateTime" required>
+          </div>
+          <div class="form-group col-md-4">
+            <select class="form-control" name="Pax" required>
+              <option>1 pax</option>
+              <option>2 pax</option>
+              <option>3 pax</option>
+              <option>4 pax</option>
+              <option>5 pax</option>
+              <option>6 pax</option>
+              <option>7 pax</option>
+              <option>8 pax</option>
+              <option>9 pax</option>
+              <option>10 pax</option>
+            </select>
+          </div>
+        </div>
+        <div class="row justify-content-md-center">
+          <div class="form-group col-md-8">
+            <textarea class="form-control" name="Message" rows="3" placeholder="Add notes to inform us about your needs"
+              required></textarea>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 space ">
+            <button type="reset" value="reset" class="button">Cancel</button>
+            <button type="submit" class="button">Submit</button>
+          </div>
+        </div>
+      </form>
+      <div class="row justify-content-md-center">
+        <div class="col-md-8 msg">
+          <span id="pesan"></span>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+
+
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyKZVMsOPn2TJ16BNUUeuUzE3Naqq3A6FDVRgD_HNuDwwrxZvELXiOEkUaEJzxAisd1bA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const pesan = document.getElementById("pesan")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+         pesan.innerHTML = "Form sent!"
+         setTimeout(function(){
+          pesan.innerHTML = ""
+         },2000)
+         form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
