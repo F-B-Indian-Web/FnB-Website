@@ -128,7 +128,7 @@ const menu = [
     {
         id: 15,
         title: "Es Daluman",
-        label:"beverage",
+        label: "beverage",
         category: "beverages",
         price: 20,
         img: "./images/bev4.png",
@@ -192,4 +192,16 @@ function displayMenuItems(menuItems) {
     console.log(displayMenu);
 
     sectionCenter.innerHTML = displayMenu;
+}
+
+const header = document.getElementById("btns-active");
+const btns = header.getElementsByClassName("filter-btn");
+for (let i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    const current = document.getElementsByClassName("active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+  });
 }

@@ -125,10 +125,15 @@ main {
   cursor: pointer;
   transition: all 0.3s linear;
 }
+.active, .filter-btn:hover {
+  background-color: #bd1010;
+  color: black;
+}
+/*
 .filter-btn:hover {
   background: #bd1010;
   color: black;
-}
+}*/
 .section-center {
   width: 90vw;
   margin: 0 auto;
