@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer {
+  background-color: rgb(36, 17, 1);
+}
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(36, 17, 1);
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialicons a i {
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+}
+/* efek hover pada ikon media sosial */
+.socialicons a:hover {
+  background-color: black;
+  transition: 0, 5s;
+}
+.socialicons a:hover i {
+  background-color: black;
+  transition: 0.5s;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footerbottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom p {
+  color: white;
+}
+.text {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
