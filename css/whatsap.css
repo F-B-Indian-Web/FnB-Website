@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.button {
+  width: 40px;
+  position: fixed;
+  right: 5rem;
+  bottom: 40px;
+}
+.wa_button {
+  position: fixed;
+  right: 40px;
+  bottom: 50px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
