@@ -2,7 +2,7 @@ const menu = [
     {
         id: 1,
         title: "Mutton Biryani",
-        label: "main course",
+        label: "Main course",
         category: "main course",
         price: 55,
         img: "./images/menu1.jpg",
@@ -11,7 +11,7 @@ const menu = [
     {
         id: 2,
         title: "Butter Chicken",
-        label: "main course",
+        label: "Main course",
         category: "main course",
         price: 40,
         img: "./images/menu5.jpg",
@@ -20,7 +20,7 @@ const menu = [
     {
         id: 3,
         title: "Babi Guling",
-        label: "main course",
+        label: "Main course",
         category: "main course",
         price: 35,
         img: "./images/menu3.jpg",
@@ -29,7 +29,7 @@ const menu = [
     {
         id: 4,
         title: "Ayam Betutu",
-        label: "main course",
+        label: "Main course",
         category: "main course",
         price: 30,
         img: "./images/menu4.jpg",
@@ -38,7 +38,7 @@ const menu = [
     {
         id: 5,
         title: "Rogan Josh",
-        label: "main course",
+        label: "Main course",
         category: "main course",
         price: 55,
         img: "./images/menu2.jpg",
@@ -47,7 +47,7 @@ const menu = [
     {
         id: 6,
         title: "Palak Paneer",
-        label: "vegetarian",
+        label: "Vegetarian",
         category: "vegetarian",
         price: 35,
         img: "./images/veg1.jpeg",
@@ -56,7 +56,7 @@ const menu = [
     {
         id: 7,
         title: "Dal Makhani",
-        label: "vegetarian",
+        label: "Vegetarian",
         category: "vegetarian",
         price: 33,
         img: "./images/veg2.jpeg",
@@ -65,7 +65,7 @@ const menu = [
     {
         id: 8,
         title: "Gado-gado",
-        label: "vegetarian",
+        label: "Vegetarian",
         category: "vegetarian",
         price: 25,
         img: "./images/veg3.jpg",
@@ -74,7 +74,7 @@ const menu = [
     {
         id: 9,
         title: "Lawar",
-        label: "vegetarian",
+        label: "Vegetarian",
         category: "vegetarian",
         price: 20,
         img: "./images/veg4.jpg",
@@ -83,7 +83,7 @@ const menu = [
     {
         id: 10,
         title: "Baingan Bharta",
-        label: "vegetarian",
+        label: "Vegetarian",
         category: "vegetarian",
         price: 25,
         img: "./images/veg5.jpg",
@@ -92,7 +92,7 @@ const menu = [
     {
         id: 11,
         title: "Mango Lassi",
-        label: "beverage",
+        label: "Beverage",
         category: "beverages",
         price: 30,
         img: "./images/bev2.jpg",
@@ -101,7 +101,7 @@ const menu = [
     {
         id: 12,
         title: "Masala Chai",
-        label: "beverage",
+        label: "Beverage",
         category: "beverages",
         price: 25,
         img: "./images/bev1.jpg",
@@ -110,7 +110,7 @@ const menu = [
     {
         id: 13,
         title: "Es Campur",
-        label: "beverage",
+        label: "Beverage",
         category: "beverages",
         price: 30,
         img: "./images/bev3.png",
@@ -119,7 +119,7 @@ const menu = [
     {
         id: 14,
         title: "Nimbu Pani",
-        label: "beverage",
+        label: "Beverage",
         category: "beverages",
         price: 20,
         img: "./images/bev5.png",
@@ -128,7 +128,7 @@ const menu = [
     {
         id: 15,
         title: "Es Daluman",
-        label: "beverage",
+        label: "Beverage",
         category: "beverages",
         price: 20,
         img: "./images/bev4.png",
