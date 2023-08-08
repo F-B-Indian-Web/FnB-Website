@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Serif", serif;
+}
+
+body {
+  background-color: #420101;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Awal CSS Navbar */
+
+.navbar {
+  font-size: 20px;
+}
+
+.navbar .navbar-brand img {
+  width: 16%;
+  height: 16%;
+}
+
+.container-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container-title .text-title h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-title.text-content.card-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.navbar .search {
+  cursor: pointer;
+  position: relative;
+  left: 2px;
+}
+
+input {
+  width: 100%;
+  padding: 5px 16px;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  outline: none;
+  border-radius: 20px;
+}
+
+.search {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+
+.search.active {
+  left: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+.container {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+.container .search {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
+
+.container .search h1 {
+  letter-spacing: 3px;
+  display: inline-block;
+  border-bottom: 2px;
+  padding-bottom: 10px;
+}
+
+.container .search input {
+  width: 50%;
+  padding: 5px 16px;
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  outline: none;
+  border-radius: 20px;
+}
+
+/* Akhir Navbar */
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 3.125em 6.25em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #f2e5c7;
+  color: #420101;
+  text-align: center;
+}
+
+.contact .content {
+  text-align: center;
+}
+
+.contact .content h1 {
+  font-size: 3em;
+  color: #420101;
+  font-weight: bold;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125em;
+  margin-top: 1.875em;
+}
+
+.container .contactInfo {
+  width: 70%;
+  display: flex;
+  min-height: 34.375em;
+  margin-top: 3.125em;
+}
+.container .contactInfo .text-title {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 900;
+}
+.container .contactInfo .text-title1 {
+  position: absolute;
+  bottom: 15%;
+  padding: 0.625em;
+  margin-top: 0.625em;
+  margin-left: 20%;
+  font-weight: 900;
+}
+.container .contactInfo .text-title2 {
+  position: absolute;
+  bottom: 10%;
+  padding: 0.625em;
+  margin-top: 0.625em;
+  margin-left: 20%;
+  font-weight: 900;
+}
+.container .contactInfo .text-title3 {
+  position: absolute;
+  bottom: 5%;
+  padding: 0.625em;
+  margin-top: 0.625em;
+  margin-left: 20%;
+  font-weight: 900;
+}
+.container .contactForm {
+  position: relative;
+  width: 40%;
+  min-height: 550px;
+}
+.text-title {
+  position: relative;
+  display: flex;
+}
+.text-title p {
+  padding-right: 54%;
+}
+
+.container .contactForm h2 {
+  font-size: 2em;
+  color: #420101;
+  font-weight: 800;
+}
+.container .contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 1.875em;
+}
+
+.container .contactForm .inputBox input,
+.container .contactForm .inputBox textarea {
+  width: 100%;
+  padding: 0.313em 0;
+  font-size: 1.1em;
+  margin: 0.625em 0;
+  border-radius: 0.938em;
+  border-bottom: 0.125em solid #420101;
+}
+
+.container .contactForm .inputBox span {
+  position: absolute;
+  left: 5px;
+  pointer-events: none;
+  padding: 0.313em 0;
+  margin: 0.625em 0;
+  font-size: 1.1em;
+  color: #420101;
+  transition: 0.5s;
+  font-weight: 800;
+}
+.container .contactForm .inputBox input:focus ~ span,
+.container .contactForm .inputBox textarea:focus ~ span,
+.container .contactForm .inputBox input:valid ~ span,
+.container .contactForm .inputBox textarea:valid ~ span {
+  color: #420101;
+  font-size: 1.1em;
+  transform: translateY(-1.875em);
+}
+.container .contactForm .btn {
+  width: 30%;
+  height: 2.5em;
+  background-color: blue;
+  color: #f2e5c7;
+  border-radius: 1.875em;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-right: 18.75em;
+  cursor: pointer;
+}
+
+.container .contactForm .btn:hover {
+  background-color: #f2e5c7;
+  color: black;
+}
+/* Footer Awal */
+
+footer {
+  background-color: rgb(36, 17, 1);
+}
+.footercontainer {
+  width: 100%;
+  padding: 20px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(36, 17, 1);
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialicons a i {
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+}
+/* efek hover pada ikon media sosial */
+.socialicons a:hover {
+  background-color: black;
+  transition: 0, 5s;
+}
+.socialicons a:hover i {
+  background-color: black;
+  transition: 0.5s;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footerbottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom p {
+  color: white;
+}
+.text {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+/* Footer Akhir */
