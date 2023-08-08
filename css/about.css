@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f2e5c7;
+  font-size: 20px;
+}
+
+/* Awal CSS Navbar */
+
+.navbar .navbar-brand img {
+  width: 16%;
+  height: 16%;
+}
+
+.container-title {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.container-title .text-title h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-title.text-content.card-text {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.navbar .search {
+  cursor: pointer;
+  position: relative;
+  left: 2px;
+}
+
+input {
+  width: 100%;
+  padding: 5px 16px;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  outline: none;
+  border-radius: 20px;
+}
+
+.search {
+  position: relative;
+  left: 30px;
+  top: 2.5px;
+  transition: 0.5s ease-in-out;
+}
+
+.search.active {
+  left: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 0px 0px;
+}
+.container {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+.container .search {
+  display: flex;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
+
+.container .search h1 {
+  letter-spacing: 3px;
+  display: inline-block;
+  border-bottom: 2px;
+  padding-bottom: 10px;
+}
+
+.container .search input {
+  width: 50%;
+  padding: 5px 16px;
+  background: transparent;
+  border: 1px solid #000;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  outline: none;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 30px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.content h1 {
+  text-align: center;
+  font-weight: bold;
+}
+.content p {
+  margin-bottom: 15px;
+  text-align: justify;
+  margin-top: 100px;
+  font-weight: 400;
+}
+
+.content h5 {
+  margin-top: 350px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+.thumbanail {
+  width: 450px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.thumbanail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.thumbanail img {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+.thumbanail.right {
+  float: right;
+  margin-left: 20px;
+  margin-top: 20%;
+}
+
+.thumbanail.right img {
+  width: 70%;
+  height: 60vh;
+  margin-left: 30%;
+}
+.thumbanail.left {
+  float: left;
+  margin-right: 20px;
+}
+
+.thumbanail.left img {
+  width: 70%;
+  height: 60vh;
+}
+
+footer {
+  background-color: rgb(36, 17, 1);
+}
+.footercontainer {
+  margin-top: 23%;
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(36, 17, 1);
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialicons a i {
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+}
+
+.socialicons a:hover {
+  background-color: black;
+  transition: 0, 5s;
+}
+.socialicons a:hover i {
+  background-color: black;
+  transition: 0.5s;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footerbottom {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom p {
+  color: white;
+}
+.text {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .thumbanail.right {
+    float: none;
+    margin-left: 0px;
+  }
+  .thumbanail.left {
+    float: none;
+    margin-right: 0px;
+  }
+  .thumbanail {
+    width: 100%;
+  }
+}
