@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,500&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,57 @@
 body {
     background-color: #F2E5C7;
 }
+
+/* Awal CSS Navbar */
+
+.navbar .navbar-brand img {
+    width: 16%;
+    height: 16%;
+  }
+  
+  .container-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .container-title .text-title h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .container-title.text-content.card-text {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .navbar .search {
+    cursor: pointer;
+    position: relative;
+    left: 3px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px 16px;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    outline: none;
+    border-radius: 20px;
+  }
+  
+  .search {
+    position: relative;
+    left: 30px;
+    top: 2.5px;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .search.active {
+    left: 0;
+  }
 .reservation{
     padding: 5rem 0;
 }
@@ -59,3 +112,58 @@ span{
     text-align: end;
     margin-top: 15px;
 }
+
+footer {
+    background-color: rgb(36, 17, 1);
+  }
+  .footercontainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+  }
+  
+  .socialicons {
+    display: flex;
+    justify-content: center;
+  }
+  .socialicons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(36, 17, 1);
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialicons a i {
+    font-size: 1em;
+    color: white;
+    opacity: 0.9;
+  }
+  /* efek hover pada ikon media sosial */
+  .socialicons a:hover {
+    background-color: black;
+    transition: 0, 5s;
+  }
+  .socialicons a:hover i {
+    background-color: black;
+    transition: 0.5s;
+  }
+  .footernav ul {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  .footerbottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }
+  .footerbottom p {
+    color: white;
+  }
+  .text {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  
